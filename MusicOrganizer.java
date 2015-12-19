@@ -10,6 +10,8 @@ public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
     private ArrayList<String> files;
+    //Booleano que muestra si el indice es correcto o no.
+    private boolean validIndex;
         
     /**
      * Create a MusicOrganizer
@@ -17,6 +19,7 @@ public class MusicOrganizer
     public MusicOrganizer()
     {
         files = new ArrayList<String>();
+        validIndex = false;
     }
     
     /**
@@ -68,6 +71,18 @@ public class MusicOrganizer
         if(index < 0 || index >= files.size()){
            System.out.println("Error rango dado no es correcto,introducir rango de 0 a " + files.size());
             
+        }
+    }
+    
+    public void validIndex(int index)
+    {
+        if(index < 0 || index >= files.size())
+        {
+            validIndex = false;
+        }
+        else
+        {
+            validIndex = true;
         }
     }
     
