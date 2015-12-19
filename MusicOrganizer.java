@@ -71,7 +71,7 @@ public class MusicOrganizer
     public void checkIndex(int index)
     {
         if(index < 0 || index >= files.size()){
-           System.out.println("Error rango dado no es correcto,introducir rango de 0 a " + files.size());
+           System.out.println("Error rango dado no es correcto,introducir rango de 0 a " + (files.size() - 1));
             
         }
     }
@@ -86,6 +86,11 @@ public class MusicOrganizer
         {
             validIndex = true;
         }
+    }
+    
+    public boolean getValidIndex()
+    {
+        return validIndex;
     }
     
     
