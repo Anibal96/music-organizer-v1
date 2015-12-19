@@ -2,7 +2,7 @@ public class Test
 {
    
     /**
-     * Constructor for objects of class Test
+     *  Comprueba los metodos checkIndex, valid  Index, listFile y removeFile sin tener que usar la interfaz de BlueJ
      */
     public void Test()
     {

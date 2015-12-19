@@ -76,6 +76,9 @@ public class MusicOrganizer
         }
     }
     
+    /**
+     * Comprueba un valor para saber si index esta dentro del indice
+     */
     public void validIndex(int index)
     {
         if(index < 0 || index >= files.size())
@@ -88,6 +91,9 @@ public class MusicOrganizer
         }
     }
     
+    /**
+     * Devuelve un valor booleano guardado en validIndex;
+     */
     public boolean getValidIndex()
     {
         return validIndex;
